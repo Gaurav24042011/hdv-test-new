@@ -1,0 +1,106 @@
+@use "../../styles//index.scss" as common;
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  .otp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .form-title {
+      color: #000;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .form-subtitle {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: #606268;
+      margin: 0;
+      p {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        color: #606268;
+        .contact {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px;
+          display: flex;
+          gap: 12px;
+        }
+        .change-number {
+          color: #2579f1;
+          font-weight: 600;
+          line-height: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  form {
+    .otp-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 45px 0 48px;
+      .otp-inputs {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+
+        input {
+          box-sizing: border-box;
+          width: 60px;
+          height: 60px;
+          background: #ffffff;
+          border: 1px solid hsl(0, 0%, 85%);
+
+          box-shadow: 0px 4px 8px rgba(245, 130, 41, 0.16);
+          border-radius: 4px;
+          color: #000;
+          box-shadow: 0px 4px 8px 0px rgba(245, 130, 41, 0.16);
+          text-align: center;
+          &:focus,
+          &:focus-visible {
+            border-color: #f58229;
+            outline: none;
+          }
+          &:not(:placeholder-shown) {
+            border-color: #f58229;
+            outline: none;
+          }
+        }
+      }
+      .supporting-text {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #606268;
+
+        span {
+          color: #2579f1;
+          text-decoration: none;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+    .submit-btn-container {
+      @include common.submit-container-mixin();
+    }
+  }
+}

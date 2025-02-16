@@ -1,0 +1,62 @@
+.carousel {
+  .slick-slider {
+    &:hover {
+      .slick-prev,
+      .slick-next {
+        opacity: 1;
+      }
+    }
+    .slick-list {
+      border-radius: 10px;
+      .slick-slide {
+        border-radius: 10px; /* Apply rounded corners to the slide */
+        overflow: hidden; /* Ensure image is clipped within the rounded corners */
+        div{
+          div{
+            display: inline !important;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-slider {
+    .slick-prev,
+    .slick-next {
+      z-index: 2;
+      width: 26px;
+      height: 26px;
+      opacity: 0; // Hide buttons by default
+      transition: opacity 0.3s ease; // Smooth fade-in/out
+      background-size: contain; // Ensure proper image scaling
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: ""; // Remove default slick arrow content
+      }
+    }
+
+    .slick-prev {
+      left: 10px;
+      background-image: url("../../assets/swiper_prev.svg");
+    }
+
+    .slick-next {
+      right: 10px;
+      background-image: url("../../assets/swiper_next.svg");
+    }
+  }
+
+  .slick-dots {
+    bottom: 4px;
+    li {
+      margin: 0 3px;
+      button {
+        &::before {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

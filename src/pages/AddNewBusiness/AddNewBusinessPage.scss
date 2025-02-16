@@ -1,0 +1,111 @@
+@use "../../styles/index.scss" as common;
+
+$primary-color: #2579f1;
+$background-color: #f4f7fc;
+$border-radius: 8px;
+$label-color: #747474;
+
+.ab-container {
+  background-color: $background-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 80px;
+  padding-left: 54px;
+
+  .br-left {
+    .free-business-title-container {
+      .free-business-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #182035;
+
+        span {
+          color: #2b79ee;
+        }
+      }
+      .free-business-subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #606268;
+      }
+    }
+
+    label {
+      display: block;
+      color: #747474;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 8px;
+
+      .input-prefix {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 82px;
+        border: 1px solid hsl(0, 0%, 85%);
+        border-radius: 7px !important;
+        height: 48px;
+        background: #fff;
+      }
+    }
+    .submit-button-section {
+      margin-top: 20px;
+      @include common.submit-container-mixin();
+      .term-n-condition {
+        display: flex;
+        flex-direction: column;
+
+        .term-holder {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .check-box {
+            cursor: pointer;
+          }
+          .term-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            // text-align: center;
+            color: #606268 !important;
+
+            a {
+              text-decoration: underline;
+              margin: 0 6px;
+            }
+            a:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .br-right {
+    background-color: $background-color;
+
+    .br-right-img {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+

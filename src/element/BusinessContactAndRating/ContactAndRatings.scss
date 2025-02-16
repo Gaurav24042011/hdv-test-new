@@ -1,0 +1,59 @@
+@use "../../styles//index.scss" as common;
+
+.contact-ratings {
+  margin-bottom: 20px;
+
+  .business-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+ //   letter-spacing: -0.02em;
+    color: #2b2b2b;
+  }
+
+  .business-location,
+  .business-hours {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+ //   letter-spacing: -0.02em;
+    color: #656565;
+  }
+
+  .ratings {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+
+    strong {
+      color: #ff9800;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 0.9em;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+
+      &:active {
+        background-color: #003f8c;
+      }
+    }
+  }
+}

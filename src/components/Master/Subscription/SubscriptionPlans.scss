@@ -1,0 +1,95 @@
+@use "../../../styles/index.scss" as common;
+
+.add-subscription {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  @include common.submit-container-mixin();
+}
+
+.pricing-container {
+  display: flex;
+  padding-bottom: 80px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer */
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-button {
+    position: absolute;
+    bottom: -10px;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+    &:hover,
+    &:focus {
+      background-color: #2b79ee;
+    }
+  }
+  
+  .scroll-button.left {
+    right: 80px;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid #2b79ee;
+      border-bottom: 2px solid #2b79ee;
+      transform: rotate(135deg);
+      transition: border-color 0.3s ease;
+    }
+  
+    &:hover::before,
+    &:focus::before {
+      border-color: white; /* Changes arrow color on hover */
+    }
+  }
+  
+  .scroll-button.right {
+    right: 10px;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid #2b79ee;
+      border-bottom: 2px solid #2b79ee;
+      transform: rotate(-45deg);
+      transition: border-color 0.3s ease;
+    }
+  
+    &:hover::before,
+    &:focus::before {
+      border-color: white; /* Changes arrow color on hover */
+    }
+  }
+  
+}

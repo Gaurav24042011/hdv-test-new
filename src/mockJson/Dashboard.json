@@ -1,0 +1,28 @@
+{
+  "commingSoonSections": [
+    {
+      "title": "Explore Top Cities",
+      "type": "coming Soon",
+      "text": "We are going to launch very soon. Stay Tuned.",
+      "image": "path/to/coming-soon-icon.svg"
+    },
+    {
+      "title": "Events",
+      "type": "coming Soon",
+      "text": "We are going to launch very soon. Stay Tuned.",
+      "image": "path/to/coming-soon-icon.svg"
+    },
+    {
+      "title": "Events",
+      "type": "coming Soon",
+      "text": "We are going to launch very soon. Stay Tuned.",
+      "image": "path/to/coming-soon-icon.svg"
+    },
+    {
+      "title": "Events",
+      "type": "coming Soon",
+      "text": "We are going to launch very soon. Stay Tuned.",
+      "image": "path/to/coming-soon-icon.svg"
+    }
+  ]
+}

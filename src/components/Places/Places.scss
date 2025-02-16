@@ -1,0 +1,34 @@
+.autocomplete-container {
+  .ask-current-location {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1000;
+
+    .ask-current-location-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      border-radius: 8px;
+    }
+  }
+  input {
+    &:focus,
+    &:focus-visible {
+      border-color: #f58229 !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    &:not(:placeholder-shown):not([type="date"]) {
+      border-color: #f58229 !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}

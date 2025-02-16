@@ -1,0 +1,151 @@
+{   
+  "businessName": "GauravBus6",
+  "pincode": "422004",
+  "address1": "A1",
+  "address2": "test",
+  "landmark": "test",
+  "stateName": "test",
+  "cityName": "pune",
+  "area": "location uimp",
+  "contactPersonName": "urmi",
+  "mobileNumber": "8466020370",
+  "MobileNumber1": "9999999999",
+  "MobileNumber2": "9999999999",
+  "Email": "urmila@gmail.com",
+  "categoryId": 1,
+  "subscriptionId":3,
+  "customerId":6,
+  "loginId": 2,
+  "chkKYC": true,
+  "businessLink": "test",
+  "instLink": "test",
+  "xBusinessLink": "test",
+  "youTubeLink": "test",
+  "otherPlatformLink": "test",
+  "websiteLink": "test",
+  "PhotoPath": "Pari.png",  
+  "subcategoryIds": [1,8,2,7] ,
+  "Timings": [
+    {
+      "Days": ["Mon", "Tue"],
+      "OpenAt": "8:00 AM",
+      "CloseAt": "10:00 AM"
+    },
+    {
+      "Days": ["Sat", "Sun", "Wed", "Thu"],
+      "OpenAt": "9:00 PM",
+      "CloseAt": "11:00 AM"
+    },
+    {
+      "Days": ["Fri"],
+      "OpenAt": "12:00 PM",
+      "CloseAt": "1:00 AM"
+    }
+  ]  
+}
+// {    
+//   "businessName": "Mother",
+//   "pincode": "422004",
+//   "address1": "A1",
+//   "address2": "test",
+//   "area": "test",
+//   "stateName": "test",
+//   "cityName": "pune",  
+//   "mobileNumber": "9099999999",
+//   "categoryId": 1,
+//   "subscriptionId":3,
+//   "customerId":6,
+//   "loginId": 2,
+//   "chkKYC": true,    
+//   "subcategoryIds": [1,8,2,7] 
+  
+// }
+
+
+// const validateTimings = () => {
+//   let isValid = true;
+//   const errors = [];
+
+//   // 1. Validate that if any day is selected, time should also be selected
+//   timings.forEach((timing, index) => {
+//     if (
+//       timing.days.length >= 0 &&
+//       (!timing.open ||
+//         (!timing.close &&
+//           timing.open !== "24hrs" &&
+//           timing.open !== "Closed"))
+//     ) {
+//       errors.push(
+//         `Please select opening and closing times for slot ${index + 1}`
+//       );
+//       isValid = false;
+//     }
+//   });
+
+//   // 2. Prevent selecting the same day with "24hrs" and other times
+//   const dayMap = {};
+//   timings.forEach((timing) => {
+//     timing.days.forEach((day) => {
+//       if (!dayMap[day]) dayMap[day] = [];
+//       dayMap[day].push(timing.open);
+//     });
+//   });
+
+//   Object.keys(dayMap).forEach((day) => {
+//     const dayTimes = dayMap[day];
+//     if (dayTimes.includes("24hrs") && dayTimes.length > 1) {
+//       errors.push(`Cannot select "24hrs" and other time slots for ${day}`);
+//       isValid = false;
+//     }
+//   });
+
+//   // 3. Ensure time slots for the same day do not overlap
+//   const overlaps = (start1, end1, start2, end2) =>
+//     start1 < end2 && start2 < end1;
+
+//   timings.forEach((timing, index) => {
+//     timing.days.forEach((day) => {
+//       const timeRanges = timings
+//         .filter(
+//           (t, i) =>
+//             i !== index &&
+//             t.days.includes(day) &&
+//             t.open !== "24hrs" &&
+//             t.open !== "Closed"
+//         )
+//         .map((t) => [t.open, t.close]);
+
+//       timeRanges.forEach(([open, close]) => {
+//         if (overlaps(timing.open, timing.close, open, close)) {
+//           errors.push(`Time slots for ${day} overlap in slot ${index + 1}`);
+//           isValid = false;
+//         }
+//       });
+//     });
+//   });
+
+//   // 4. Limit selecting a day to a maximum of 2 times
+//   Object.keys(dayMap).forEach((day) => {
+//     if (dayMap[day].length > 2) {
+//       errors.push(`A day (${day}) can only be selected a maximum of 2 times`);
+//       isValid = false;
+//     }
+//   });
+
+//   // 5. Ensure open and close times are not the same
+//   timings.forEach((timing, index) => {
+//     if (timing.open && timing.close && timing.open === timing.close) {
+//       errors.push(
+//         `Open and Close times cannot be the same in slot ${index + 1}`
+//       );
+//       isValid = false;
+//     }
+//   });
+
+//   // Display errors
+//   if (!isValid) {
+//     alert(errors.join("\n"));
+//   }
+
+//   return isValid;
+// };

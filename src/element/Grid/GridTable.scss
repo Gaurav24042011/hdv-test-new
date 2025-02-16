@@ -1,0 +1,224 @@
+.grid-container {
+  background: white;
+
+  .search-button-container {
+    padding: 24px 16px;
+
+    .cta-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      button{
+        height: 48px;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    .input-group {
+      position: relative;
+      padding: 0;
+      .grid-search {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        height: 48px;
+        padding-left: 35px !important;
+        padding-right: 20px;
+
+        &::placeholder {
+          color: #9e9e9e;
+        }
+        &:focus,
+        &:focus-visible {
+          border-color: #f58229 !important;
+          outline: none !important;
+          box-shadow: none;
+        }
+
+        &:not(:placeholder-shown) {
+          border-color: #f58229;
+          outline: none;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        background-image: url("../../assets/search.svg");
+        background-size: cover;
+        background-position: center;
+        z-index: 10;
+      }
+    }
+  }
+  .grid-table {
+    margin: 0;
+
+    tr {
+      td {
+        &:first-child {
+          padding-left: 60px;
+          width: 254px;
+        }
+
+        &:last-child{
+          padding-right: 30px;
+        }
+      }
+    }
+
+    th{
+      &:first-child {
+        padding-left: 60px;
+      }
+
+      &:last-child{
+        padding-right: 30px;
+      }
+    }
+
+    th,
+    td {
+      padding: 15px 20px;
+      vertical-align: middle;
+      font-style: normal;
+      color: #000000;
+      line-height: 21px;
+    }
+
+    th {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    td {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .even {
+      td {
+        box-shadow: inset 0 0 0 9999px #f4f7fc;
+      }
+    }
+    .action-wrapper {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      width: 100%;
+      gap: 20px;
+
+      .action-edit {
+        padding: 0;
+        background: transparent;
+        border: none;
+        color: #000000;
+        margin: 0;
+      }
+
+      .form-check-input {
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.pagination-class {
+  background: #fff;
+  padding: 16px 70px;
+  margin-top: 10px;
+
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  .show-page {
+    .dropdown-toggle {
+      padding: 8px 9px;
+      border-radius: 8px;
+      border: none !important;
+      background-color: rgba(142, 142, 147, 0.12);
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+
+      color: #000000;
+
+      &::after {
+        color: rgb(158, 158, 158);
+        height: 5px;
+        width: 5px;
+        vertical-align: 0;
+      }
+    }
+  }
+
+  .pagination-right-section {
+    display: flex;
+    gap: 12px;
+
+    button {
+      margin: 0 !important;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+
+      color: #ffffff;
+
+      &.btn-primary {
+        background: rgba(37, 121, 241, 1);
+        color: white;
+      }
+
+      &.btn-outline-primary {
+        background: rgba(224, 224, 224, 1);
+        color: black;
+      }
+    }
+
+    .previous,
+    .next {
+      background: transparent !important;
+      border: none;
+      color: #000000;
+      cursor: pointer;
+      padding: 8px 0;
+
+      &:disabled {
+        color: rgba(158, 158, 158, 1);
+        opacity: 1;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

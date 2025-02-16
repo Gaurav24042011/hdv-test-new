@@ -1,0 +1,203 @@
+// TODO: add internal container for modal
+// TODO: refactor to use wild card selector ([class^='hdv-col'] not working)
+// TODO: assume 12 cols if nothing specified
+
+$container-padding: 40px;
+$gutter-space: 10px;
+
+
+
+.hdv-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  width: 100%;
+}
+
+.hdv-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter-space;
+  margin-right: -$gutter-space;
+}
+
+.hdv-col-1,
+.hdv-col-2,
+.hdv-col-3,
+.hdv-col-4,
+.hdv-col-5,
+.hdv-col-6,
+.hdv-col-7,
+.hdv-col-8,
+.hdv-col-9,
+.hdv-col-10,
+.hdv-col-11,
+.hdv-col-12 {
+  min-height: 1px;
+  padding-left: $gutter-space;
+  padding-right: $gutter-space;
+  position: relative;
+  width: 100%;
+}
+
+.hdv-col-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.hdv-col-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.hdv-col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.hdv-col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.hdv-col-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.hdv-col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.hdv-col-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.hdv-col-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.hdv-col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.hdv-col-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.hdv-col-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.hdv-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hdv-hidden {
+  display: none;
+}
+
+
+
+//for Business Register
+
+$gutter-space-br: 20px;
+
+.hdv-br-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter-space-br;
+  margin-right: -$gutter-space-br;
+}
+
+.hdv-br-col-1,
+.hdv-br-col-2,
+.hdv-br-col-3,
+.hdv-br-col-4,
+.hdv-br-col-5,
+.hdv-br-col-6,
+.hdv-br-col-7,
+.hdv-br-col-8,
+.hdv-br-col-9,
+.hdv-br-col-10,
+.hdv-br-col-11,
+.hdv-br-col-12 {
+  min-height: 1px;
+  padding-left: $gutter-space-br;
+  padding-right: $gutter-space-br;
+  position: relative;
+  width: 100%;
+}
+
+.hdv-br-col-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.hdv-br-col-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.hdv-br-col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.hdv-br-col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.hdv-br-col-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.hdv-br-col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.hdv-br-col-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.hdv-br-col-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.hdv-br-col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.hdv-br-col-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.hdv-br-col-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.hdv-br-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}

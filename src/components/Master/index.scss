@@ -1,0 +1,45 @@
+@use "../../styles/index.scss" as common;
+$primary-color: #2579f1;
+$background-color: #f4f7fc;
+$border-radius: 8px;
+$label-color: #747474;
+
+.master-container {
+  background-color: $background-color;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  margin-top: 80px;
+
+  .master-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    color: #182035;
+    margin: 0;
+  }
+  .nav {
+    gap: 24px;
+    margin-bottom: 24px;
+    .nav-item {
+      .nav-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #333333;
+        padding: 14px 0;
+
+        &.active {
+          border-bottom-color: rgba(43, 110, 211, 1);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+
+          color: #2b6ed3;
+        }
+      }
+    }
+  }
+}

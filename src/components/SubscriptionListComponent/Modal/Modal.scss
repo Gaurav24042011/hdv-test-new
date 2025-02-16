@@ -1,0 +1,112 @@
+.modal-content {
+  .modal-header {
+    padding: 10px 40px;
+    .modal-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 38px;
+      color: #182035;
+    }
+  }
+
+  .modal-body {
+    padding: 30px 40px;
+    .plan-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      .plan-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 21px;
+        color: #2579f1;
+      }
+      .plan-price {
+        /* Rs 3,300 */
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #182035;
+      }
+    }
+
+    .plan-benefits {
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      padding: 10px 20px;
+      background-color: rgba(217, 217, 217, 0.4);
+
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #747474;
+      }
+    }
+    .tax-holder {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .tax-name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #182035;
+      }
+      .tax-amount {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #182035;
+      }
+    }
+
+    .total-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(217, 217, 217, 0.2);
+      margin-left: -40px;
+      margin-right: -40px;
+      padding: 10px 40px;
+
+      .total-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #182035;
+      }
+      .total-amount {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+
+        color: #182035;
+      }
+    }
+  }
+
+  .modal-footer {
+    button {
+      background: rgba(37, 121, 241, 1);
+      padding: 10px 50px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+}

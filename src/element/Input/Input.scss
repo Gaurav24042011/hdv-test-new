@@ -1,0 +1,42 @@
+.common-input {
+  height: 48px;
+  background: #fff;
+  color: #000;
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 7px !important;
+  padding: 15px 12px;
+
+  &:focus,
+  &:focus-visible {
+    border-color: #f58229 !important;
+    outline: none !important;
+  }
+
+  &:not(:placeholder-shown) {
+    border-color: #f58229;
+    outline: none;
+  }
+}
+.invalid-mobile {
+  border: 1px solid red !important;
+}
+
+.toggle-password-visibility {
+  position: absolute;
+  right: 8px;
+  border: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 212;
+
+  &:focus{
+    border: none;
+    outline: none;
+  }
+
+  span {
+    font-size: 15px;
+  }
+}

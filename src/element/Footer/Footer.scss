@@ -1,0 +1,44 @@
+.footer {
+    background-color: #3b82f6; // Matches the blue color
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #ffffff; // White text color
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1440px;
+    z-index: 1000;
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      p {
+        margin: 0;
+      }
+  
+      .footer-links {
+        display: flex;
+        gap: 10px;
+  
+        a {
+          text-decoration: none;
+          color: #ffffff; // White link color
+          font-weight: 500;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+  
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  

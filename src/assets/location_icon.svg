@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #959595;
+      }
+    </style>
+  </defs>
+  <g id="Location" transform="translate(-703 -147)">
+    <rect id="Rectangle_70480" data-name="Rectangle 70480" class="cls-1" width="22" height="36" transform="translate(703 147)"/>
+    <g id="pin" transform="translate(655.615 155.64)">
+      <g id="Group_145931" data-name="Group 145931" transform="translate(54.909 4.024)">
+        <g id="Group_145930" data-name="Group 145930" transform="translate(0)">
+          <path id="Path_147626" data-name="Path 147626" class="cls-2" d="M164.423,110.062a3.476,3.476,0,1,0,3.476,3.476A3.48,3.48,0,0,0,164.423,110.062Zm0,5.488a2.012,2.012,0,1,1,2.012-2.012A2.014,2.014,0,0,1,164.423,115.55Z" transform="translate(-160.947 -110.062)"/>
+        </g>
+      </g>
+      <g id="Group_145933" data-name="Group 145933" transform="translate(50.885)">
+        <g id="Group_145932" data-name="Group 145932" transform="translate(0)">
+          <path id="Path_147627" data-name="Path 147627" class="cls-2" d="M58.385,0a7.509,7.509,0,0,0-7.5,7.5v.207c0,2.092,1.2,4.529,3.564,7.244a30.83,30.83,0,0,0,3.476,3.4l.46.372.46-.372a30.822,30.822,0,0,0,3.476-3.4c2.365-2.715,3.564-5.152,3.564-7.244V7.5A7.509,7.509,0,0,0,58.385,0Zm6.037,7.707c0,3.535-4.554,7.813-6.037,9.112-1.483-1.3-6.037-5.578-6.037-9.112V7.5a6.037,6.037,0,1,1,12.073,0Z" transform="translate(-50.885)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

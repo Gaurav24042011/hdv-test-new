@@ -1,0 +1,71 @@
+@use "../../styles/index.scss" as common;
+
+.subcategory-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f9fbff;
+  margin-bottom: 42px;
+  margin-top: 80px;
+
+  .subcategory-header {
+    @include common.download-icon-mixin();
+  }
+
+  .subcategory__banner {
+   
+    overflow: hidden; /* Hide overflow */
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: fill; /* Ensure the full image is visible */
+      display: block;
+      display: block;
+    }
+  }
+  .subcategory-list {
+    .subcategory-name {
+      color: #2579f1;
+      line-height: 22px;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    .subcategory-item-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      column-gap: 30px;
+      .subcategory-item {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 12px;
+        padding-left: 15px;
+        flex: 30%;
+        max-width: 32%;
+        position: relative;
+        cursor: pointer;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #151522;
+
+        &::after {
+          content: "\203A";
+          font-size: 44px;
+          color: #888;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          font-weight: 100;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

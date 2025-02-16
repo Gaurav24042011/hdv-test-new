@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+$spacing: 4; // Base spacing value
+$max-spacing: 60; // Maximum spacing value
+
+@for $i from 0 through math.div($max-spacing, $spacing) {
+  .hdv-margin-right-#{($i * $spacing)} {
+    margin-right: $i * $spacing * 1px;
+  }
+  .hdv-margin-bottom-#{($i * $spacing)} {
+    margin-bottom: $i * $spacing * 1px;
+  }
+}

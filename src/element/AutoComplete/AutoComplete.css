@@ -1,0 +1,72 @@
+.autocomplete {
+  position: relative;
+  display: flex; /* Use flexbox for centering */
+  width: 100%; /* Ensure it spans the full width of the container */
+  justify-content: center; /* Horizontally center the input */
+}
+
+input {
+  border: 1px solid rgba(174, 174, 178, 1);
+  border-radius: 10px;
+  /* background-color: #f1f1f1; */
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Set a fixed width for the input field */
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  z-index: 99;
+  top: calc(100% + 5px); /* Position below the input */
+  left: 50%; /* Center align relative to the container */
+  transform: translateX(-50%); /* Adjust to center */
+  width: 98%; /* Match the input's width */
+  overflow: auto;
+  max-height: 50vh;
+
+  .autocomplete-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  .global-search-list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .global-search-name {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-type {
+      font-size: 12px;
+    }
+  }
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}

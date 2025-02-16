@@ -1,0 +1,63 @@
+@use "../../styles/index.scss" as common;
+
+.hindavi-ads-hub-login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  .left-section {
+    @include common.left-section-mixin();
+  }
+
+  .right-section {
+    @include common.right-section-mixin();
+
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+      .from-header {
+        @include common.form-header-mixin();
+      }
+      form {
+        .user-details {
+          .form-group {
+            @include common.form-group-mixin();
+          }
+
+          .forgot-password-link {
+            text-align: right;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #2579f1;
+          }
+        }
+        .submit-btn-container {
+          @include common.submit-container-mixin();
+        }
+        .otp-login-btn {
+          cursor: pointer;
+          transition: background-color 0.3s;
+          height: 48px;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          background-color: transparent;
+          color: #2579f1;
+          border: 1px solid #2579f1;
+          border-radius: 5px;
+          width: 100%;
+          text-align: center;
+          &:disabled {
+            opacity: 0.3;
+            cursor: unset;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

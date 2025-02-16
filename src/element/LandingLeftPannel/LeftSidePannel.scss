@@ -1,0 +1,31 @@
+
+.upper-logo {
+    text-align: center;
+    margin-top: 10%;
+  }
+  .lower-logo {
+    background-color: #2579f1;
+    height: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    span {
+      padding: 10%;
+      align-self: center;
+      text-align: center;
+      img {
+        animation: rotate 6s linear infinite;
+      }
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

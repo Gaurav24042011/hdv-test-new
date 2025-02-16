@@ -1,0 +1,197 @@
+@use "../../styles/index.scss" as common;
+
+.dashboard {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f9fbff;
+  margin-bottom: 42px;
+  margin-top: 80px;
+
+  &__header {
+    @include common.download-icon-mixin();
+  }
+
+  &__banner {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &-image {
+      img {
+        height: 256px !important;
+      }
+    }
+
+    .banner-image {
+      border-radius: 10px;
+    }
+  }
+
+  &__categories {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 25px;
+    row-gap: 30px;
+    // margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    .error-cate-load {
+      font-weight: 600;
+      padding: 40px 300px;
+      width: 100%;
+      position: relative;
+    }
+
+    .category-item {
+      background: #f9f9f9;
+      border-radius: 10px;
+      // padding: 10px;
+      transition: transform 0.2s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .icon {
+        font-size: 30px;
+        margin-bottom: 8px;
+        height: 45px;
+        width: 45px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__coming-soon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f9fbff; // Adjust to match your design
+    border-radius: 10px;
+
+    .coming-soon-card-scetion {
+      .coming-soon-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #161211;
+      }
+
+      .coming-soon-card {
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 35px 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .coming-soon-card-text {
+          h3 {
+            font-size: 18px;
+            color: #007bff; // Primary color
+            margin-bottom: 10px;
+            font-weight: 700;
+            padding: 0;
+          }
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #00172d;
+          }
+        }
+
+        .coming-soon-image {
+          bottom: 10px;
+          right: 10px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  section {
+    .open {
+      display: block !important;
+      animation: slide-in-right 0.5s ease-out;
+    }
+    .close {
+      display: block !important;
+      animation: slide-out-left 0.5s ease-out;
+    }
+
+    .side-panel-wrapper {
+      @include common.side-panel();
+      display: none;
+
+      .pannel-content-open {
+        animation: slide-in-right 0.5s ease-out;
+        right: 0;
+        display: block;
+      }
+
+      .pannel-content-close {
+        animation: slide-out-left 0.5s ease-out;
+        right: 0;
+        display: block;
+      }
+
+      .side-panel {
+        width: 70%;
+
+        .side-panel-header {
+          position: sticky;
+          top: 0;
+          z-index: 400;
+          &-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+          }
+          &-right {
+            .autocomplete {
+              justify-content: center;
+            }
+          }
+        }
+
+        .side-panel-content {
+          padding: 16px;
+          overflow: auto;
+          // height: calc(100% - 70px);
+
+          .category-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            cursor: pointer;
+            flex-direction: column;
+            .icon {
+              font-size: 24px;
+              margin-right: 12px;
+              height: 45px;
+              width: 45px;
+            }
+            p{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@use "../../styles//index.scss" as common;
+
+.business-item {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  .business-image {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+  }
+
+  .business-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .business-name {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+   //   letter-spacing: -0.02em;
+      color: #2b2b2b;
+    }
+
+    .business-distance {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+   //   letter-spacing: -0.02em;
+      color: #656565;
+    }
+
+    .business-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .btn {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+      }
+
+      .btn-call {
+        background-color: #3377ff;
+      }
+
+      .btn-share {
+        border: 0.5px solid #2579f1;
+        filter: drop-shadow(0px 4px 8px rgba(245, 130, 41, 0.16));
+        border-radius: 5px;
+        color: rgba(37, 121, 241, 1);
+      }
+
+      .business-rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .star-icon {
+        color: #fdbd2c;
+      }
+    }
+  }
+}
